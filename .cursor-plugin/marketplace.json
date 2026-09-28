@@ -1,0 +1,20 @@
+{
+  "name": "acme-claude-marketplace",
+  "owner": {
+    "name": "Acme",
+    "email": "dev@acme.example"
+  },
+  "metadata": {
+    "description": "Acme plugin marketplace. The plugins live in this repo under plugins/.",
+    "version": "0.1.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "acme-dev",
+      "source": "./plugins/acme-dev",
+      "description": "How Acme develops software with Claude Code: an index injected at session start, an Opus 5.5 orchestrator with a roster of subagents, starter rules, and one skill per stack and process.",
+      "version": "0.1.0"
+    }
+  ]
+}

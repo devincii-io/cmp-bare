@@ -1,0 +1,35 @@
+{
+  "name": "acme-dev",
+  "version": "0.1.0",
+  "description": "How Acme develops software with Claude Code: an index injected at session start, an Opus 5.5 orchestrator with a roster of subagents, starter rules, and one skill per stack and process.",
+  "author": {
+    "name": "Acme",
+    "email": "dev@acme.example"
+  },
+  "repository": "https://github.com/devincii-io/cmp-bare",
+  "license": "UNLICENSED",
+  "keywords": [
+    "acme",
+    "conventions",
+    "orchestrator",
+    "subagents",
+    "opus",
+    "internal"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Acme dev",
+    "shortDescription": "Acme development conventions and orchestrator setup",
+    "longDescription": "The acme-dev index is injected at session start. The other skills hold the Opus 5.5 orchestrator setup, subagent-driven development, the starter rules, the stack, git and repo process, a new-project recipe and how-to runbooks.",
+    "developerName": "Acme",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Which acme-dev skill applies to this task?",
+      "Set up this machine for the Opus 5.5 orchestrator",
+      "Review this repo's AGENTS.md against acme-agent-files"
+    ]
+  }
+}

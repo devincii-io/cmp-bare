@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.claude/worktrees/
+node_modules/
+plugins/*/evals/results/

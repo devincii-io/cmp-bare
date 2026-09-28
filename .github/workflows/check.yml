@@ -1,0 +1,21 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      # Manifests agree, every skill is routed from the index, the Cursor rule
+      # is regenerated, and no em dash or curly quote slipped into the prose.
+      - run: python tools/check.py

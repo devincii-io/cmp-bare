@@ -1,0 +1,17 @@
+{
+  "description": "Injects the acme-dev index (skills/acme-dev/SKILL.md) into every new session, after /clear and after compaction.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"${CLAUDE_PLUGIN_ROOT}/hooks/session_start.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

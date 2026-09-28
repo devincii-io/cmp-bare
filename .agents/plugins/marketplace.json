@@ -1,0 +1,20 @@
+{
+  "name": "acme-claude-marketplace",
+  "interface": {
+    "displayName": "Acme"
+  },
+  "plugins": [
+    {
+      "name": "acme-dev",
+      "source": {
+        "source": "local",
+        "path": "./plugins/acme-dev"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
